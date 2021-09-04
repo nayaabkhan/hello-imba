@@ -15,7 +15,8 @@ tag app
 	css d:flex ai:center jc:center fld:column h:100% bgc:cooler1 ff:sans
 		.container d:flex fld:column ai:stretch jc:center g:4
 		input
-			ta:center fs:1.4em rd:1em bd:0 py:10px bgc:cooler2 shadow:inset 2px 2px 4px cooler3 c:cooler6
+			ta:center fs:1.4em rd:1em bd:0 py:10px bgc:cooler2
+			shadow:inset 2px 2px 4px cooler3 c:cooler6
 
 	def save
 		todos.push(new Todo title: value)
