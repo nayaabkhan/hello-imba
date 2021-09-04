@@ -26,7 +26,7 @@ tag app
 		<form.container @submit.prevent=save>
 			<input
 				type='text' @submit=save
-				placeholder="What do you wan to remember?"
+				placeholder="What do you want to remember?"
 				bind=value
 			>
 
