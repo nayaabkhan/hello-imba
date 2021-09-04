@@ -6,10 +6,10 @@ tag app
 	todos = [new Todo title: "Buy milk"]
 	value = ''
 
-	def completed
+	get completed
 		todos.filter do(todo) todo.completed
 
-	def pending
+	get pending
 		todos.filter do(todo) not todo.completed
 
 	css d:flex ai:center jc:center fld:column h:100% bgc:cooler1 ff:sans
@@ -35,15 +35,15 @@ tag app
 					<todo-item todo=todo>
 
 			<div route="/completed$">
-				for todo in completed!
+				for todo in completed
 					<todo-item todo=todo>
 
 			<div route="/pending$">
-				for todo in pending!
+				for todo in pending
 					<todo-item todo=todo>
 
 			<footer>
-				completed!.length
+				completed.length
 				<span> " out of "
 				todos.length
 
