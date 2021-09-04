@@ -7,5 +7,5 @@ tag todo-item < label
 		.striked td:line-through
 
 	<self>
-		<input type="checkbox" bind=todo.completed @click=(todo.toggle)>
+		<input type="checkbox" bind=todo.completed @click=todo.toggle>
 		<div.striked=todo.completed> todo.title

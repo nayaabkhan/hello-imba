@@ -25,7 +25,7 @@ tag app
 		<todo-nav>
 		<form.container @submit.prevent=save>
 			<input
-				type='text' @submit=(save)
+				type='text' @submit=save
 				placeholder="What do you wan to remember?"
 				bind=value
 			>
